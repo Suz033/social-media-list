@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social media list</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Gajraj+One&family=Righteous&family=Tourney&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav 
+    class="navbar navbar-expand-lg " 
+    data-bs-theme="dark"    
+    id="navbar"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="https://files.slack.com/files-pri/T0B06GY6S-F04PU6P0LDV/nasa-logo-web-rgb__1_.png?pub_secret=fd22d3705b" alt="nasa-icon" id="nav-icon">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Friends List
+            </a>
+          </li>
+          <li class="nav-item">
+            <a 
+              class="nav-link active" 
+              aria-current="page" 
+              href="/index.html"           
+            >
+              Recommended
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="container text-center">
+    <div class="container d-flex justify-content-between m-4">
+      <!-- btn -->
+      <div class="">
+        <!-- <button type="button" class="btn btn-primary">
+          Friends List
+        </button>
+        <button type="button" class="btn btn-primary ms-5">
+          Recommended
+        </button> -->
+        <h1 class="title">Recommended</h1>
+      </div>
+      <!-- search bar -->
+      <form class="d-flex m-2" role="search" id="search-bar">
+        <input 
+          class="form-control me-2" 
+          type="search" 
+          placeholder="Search friends..." 
+          aria-label="Search"
+          id="search-input"
+          >
+        <button 
+          class="btn btn-outline-info" 
+          type="submit"
+          id="search-btn"
+        >
+          Search
+        </button>
+      </form>
+  
+    </div>
+  
+    <!-- user list -->
+    <div class="container d-flex justify-content-around flex-wrap" id="user-list">
+      <!-- user -->
+      <div class="m-3 mt-5 mb-5 d-flex align-items-end user-block" data-id="user-">
+        <!-- user img -->
+        <img src="https://files.slack.com/files-pri/T0B06GY6S-F04PN800WA3/clipart214152.png?pub_secret=21369b7410" class="card-img-top" alt="user-img" id="rocket">
+        <img src="https://robohash.org/totampossimusblanditiis.png?size=300x300&set=set1"
+          class="card-img-top" alt="user-img" id="user">
+        <div class="card-body d-flex justify-content-evenly">
+          <!-- add btn -->
+          <button type="button" class="btn btn-primary user-btn">
+            Add
+          </button>
+          <!-- view btn -->
+          <button type="button" class="btn btn-primary user-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            View
+          </button>
+        </div>
+      </div>
+      
+  </div>
+
+  </div>
+
+  <!-- paginator -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- modal -->
+  <div 
+    class="modal fade" 
+    id="exampleModal" 
+    tabindex="-1" 
+    aria-labelledby="view-modal-title" 
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable  modal-lg">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h1 class="modal-title fs-5" id="view-modal-title">
+            name
+          </h1>
+          <button 
+            type="button" 
+            class="btn-close" 
+            data-bs-dismiss="modal" 
+            aria-label="Close"
+          >
+          </button>
+        </div> -->
+        <div class="modal-body d-flex align-items-center">
+          <!-- modal img -->
+          <div class="m-3 user-block d-flex align-items-center" id="modal-img">
+            <!-- rocket img -->
+            <img src="https://files.slack.com/files-pri/T0B06GY6S-F04PN800WA3/clipart214152.png?pub_secret=21369b7410"
+              class="card-img-top modal-rocket" alt="user-img">
+            <!-- user img -->
+            <img src="https://robohash.org/totampossimusblanditiis.png?size=300x300&set=set1" class="card-img-top modal-img" alt="user-img">            
+          </div>
+          <!-- modal content -->
+          <div class="p-3 flex-grow-1" id="modal-content">
+            <!-- user data -->
+            <h1 class="modal-title">Name: Tudor Pogor</h1>
+            <hr>
+            <div class="modal-text">
+              <p>gender: male</p>
+              <p>age: 29</p>
+              <p>birthday: 12/14/1990</p>
+              <p>Email: tudor-pogor@example.com</p>
+              <p>region: Romania</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <!-- modal button -->
+          <button 
+            type="button" 
+            class="btn btn-secondary btn-lg" 
+            data-bs-dismiss="modal"
+            id="view-modal-close-btn"
+          >
+            Close
+          </button>
+          <button 
+            type="button" 
+            class="btn btn-primary btn-lg"
+            id="view-modal-add-btn"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <!-- JS -->
+  <script src="./index.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/135b935efa.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

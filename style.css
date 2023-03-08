@@ -1,0 +1,186 @@
+/* body */
+body {
+  background: url(https://files.slack.com/files-pri/T0B06GY6S-F04Q8M47FS7/desktop-1920x1080.jpg?pub_secret=a1a99d54dc);
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+
+/* nav */
+#nav-icon {
+  width: 80px;
+}
+
+.nav-link {
+  font-family: 'Tourney', cursive;
+  font-size: 26px;
+  color: #5b8ce7;
+}
+
+.nav-link:hover {
+  font-family: 'Tourney', cursive;
+  font-size: 26px;
+  color: aqua;
+}
+
+
+/* search bar */
+.title {
+  font-family: 'Gajraj One', cursive;
+  font-size: 48px;
+  color: #dcdadf;
+}
+
+#search-input {
+  background-color: black;
+  border: #b5a8c4 2px solid;
+  border-radius: 50px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+#search-input::placeholder {
+  color: #b5a8c4;
+}
+
+#search-input:focus {
+  background-color: black;
+  color: aqua;
+  border: aqua 2px solid;
+}
+
+#search-input:focus::placeholder {
+  color: aqua;
+}
+
+#search-btn {
+  color: #b5a8c4;
+  border: #b5a8c4 2px solid;
+}
+
+#search-btn:hover {
+  background-color: aqua;
+  border: aqua 2px solid;
+  color: black;
+  font-weight: bold;
+}
+
+
+/* user */
+.user-block {
+  position: relative;
+  width: 293px;
+  height: 441px;
+}
+
+.rocket {
+  position: absolute;
+  z-index: -1;
+}
+
+.user-img {
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  z-index: -2;
+  width: 45%;
+}
+
+.btn {
+  border-radius: 50px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.user-btn {
+  border-radius: 50px;
+  border: 2px solid #000;
+  background-color: blueviolet;
+}
+
+.user-btn:hover {
+  border-radius: 50px;
+  border: 2px solid #000;
+  background-color: rgb(255, 187, 27);
+  color: #000;
+  font-weight: bold;
+}
+
+
+/* modal */
+.modal-content {
+  background-color: #504360;
+}
+
+.modal-title {
+  font-family: 'Tourney', cursive;
+  font-size: 48px;
+  color: #fff;
+}
+
+.modal-text {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 26px;
+  color: #fff;
+}
+
+hr {
+  border: 3px solid white;
+  border-radius: 50px;
+}
+
+.modal-rocket {
+  position: absolute;
+  z-index: 1;
+}
+
+.modal-img {
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  z-index: 0;
+  width: 45%;
+  animation: move 6s infinite alternate;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes move {
+  15% {
+    left: 20%;
+  }
+  30% {
+    top: 20%;
+  }
+  50% {
+    left: 45%;
+  }
+  70% {
+    left: 25%;
+    top: 40%;
+  }
+  90% {
+    right: 50%;    
+  }
+}
+
+#view-modal-close-btn {
+  color: #d6d6d6;
+  background-color: #786b87;
+  border: 0;
+}
+
+#view-modal-close-btn:hover {
+  color: #d6d6d6;
+  background-color: #945ecf;
+  border: 0;
+}
+
+#view-modal-add-btn {
+  color: black;
+  background-color: rgb(255, 187, 27);
+  border: 0;
+}
+
+#view-modal-add-btn:hover {
+  color: white;
+  background-color: rgb(251, 139, 20);
+  border: 0;
+}
